@@ -1,3 +1,10 @@
+# Thông tin cá nhân
+
+Họ tên: Lâm Hoàng Quân
+Email: quanb2205902@student.ctu.edu.vn
+SDT: 0338615573
+Github: hoangquan204
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

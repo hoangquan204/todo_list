@@ -5,6 +5,23 @@ Email: quanb2205902@student.ctu.edu.vn
 SDT: 0338615573
 Github: hoangquan204
 
+# Giai thich ky thuat
+
+-Website cho phép người dùng thêm, sửa, xóa danh sách công việc cần thực hiện, lọc công việc theo tên/trạng thái.
+
+-Mỗi công việc sẽ có 3 trạng thái: + TODO (Cần thực hiện) + In progress(Đang thực hiện) + Done(Hoàn thành)
+
+-Website sẽ hiển thị cảnh báo với những công việc sắp đến dealline( nhỏ hơn 1 ngày).
+
+-CHỨC NĂNG MỞ RỘNG: Sử dụng thư viện rechars để vẽ biểu đồ so sánh số lượng các công việc TODO/In Progress/Done.
+
+# Diem se cai thien neu co thoi gian
+
+-Chatbot AI hỏi đáp/gợi ý lên lịch công việc.
+-Light mode/ dark mode.
+-Hỗ trợ nhiều ngôn ngữ.
+-Lọc theo ngày,...
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

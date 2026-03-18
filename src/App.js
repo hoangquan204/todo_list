@@ -6,6 +6,7 @@ import TaskCard from "./components/Tasks/TaskCard";
 import TaskStats from "./components/Tasks/TaskStats";
 import Footer from "./components/Footer";
 import useTasks from "./hooks/useTasks";
+import { TaskChart } from "./components/Tasks/TaskChart";
 
 
 export default function App() {
@@ -46,6 +47,8 @@ export default function App() {
         </div>
 
         <TaskStats tasks={tasks} />
+
+        <TaskChart tasks={tasks} />
       </main>
 
       <Footer />

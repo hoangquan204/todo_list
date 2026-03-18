@@ -1,16 +1,7 @@
-import { useState, useEffect } from "react";
+import useLocalStorage from "./useLocalStorage";
 
 export default function useTasks() {
-  const [tasks, setTasks] = useState([]);
-
-  useEffect(() => {
-    const data = localStorage.getItem("tasks");
-    if (data) setTasks(JSON.parse(data));
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-  }, [tasks]);
+  const [tasks, setTasks] = useLocalStorage("tasks", []);
 
   const addTask = (task) => {
     setTasks(prev => [...prev, { ...task, id: Date.now() }]);
@@ -21,15 +12,8 @@ export default function useTasks() {
   };
 
   const updateTask = (updatedTask) => {
-    setTasks(prev =>
-      prev.map(t => (t.id === updatedTask.id ? updatedTask : t))
-    );
+    setTasks(prev => prev.map(t => t.id === updatedTask.id ? updatedTask : t));
   };
 
-  return {
-    tasks,
-    addTask,
-    deleteTask,
-    updateTask
-  };
+  return { tasks, addTask, deleteTask, updateTask };
 }
